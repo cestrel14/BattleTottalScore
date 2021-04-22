@@ -3,7 +3,6 @@ class  Player:
     agility:int
     intelligence:int
     
-    size: int 
     
     heath:int
     mana:int
