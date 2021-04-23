@@ -35,6 +35,16 @@ class olimTest(unittest.TestCase):
         self.assertEqual(Mechaniks.fight.doge(self,classTest),0)    
    
     
+    def test_doge_posle_6(self):
+        classTest=P1()
+        classTest.strength=5
+        classTest.agility=8
+        classTest.intelligence=1
+        self.assertEqual(Mechaniks.fight.doge(self,classTest),1) 
+        
+    def chanse_test_0(self):
+        self.assertEqual(Mechaniks.fight.chanse(self),0)
+    
     def time_1(self):
         classTest1=P1()
          
@@ -53,19 +63,6 @@ class olimTest(unittest.TestCase):
         classTest2.mana=10
         classTest2.dodge=6
         
-        self.assertEqual(Mechaniks.fight.time(self, classTest1, classTest2),0)
-    
-    
-    
-    def test_doge_posle_6(self):
-        classTest=P1()
-        classTest.strength=5
-        classTest.agility=8
-        classTest.intelligence=1
-        self.assertEqual(Mechaniks.fight.doge(self,classTest),1) 
-        
- 
-    
-                       
+        self.assertEqual(Mechaniks.fight.time(self, classTest1, classTest2),0)                    
 if __name__ == '__main__':
     unittest.main()
