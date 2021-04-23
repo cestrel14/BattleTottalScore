@@ -19,9 +19,9 @@ class olimTest(unittest.TestCase):
     def test_step_vpered_P2(self):
         self.assertEqual(Move.mechan.movevperedP2(self, ["*","-","-","-","-","%"]),["*","-","-","-","%","-"])  
     def test_step_nazad_P1(self): 
-        self.assertEqual(Move.mechan.movenavadP1(self, ["-","*","-","-","%","-"]),["-","*","-","-","%","-"])
+        self.assertEqual(Move.mechan.movenavadP1(self, ["-","*","-","-","%","-"]),["*","-","-","-","%","-"])
     def test_step_nazad_P2(self): 
-        self.assertEqual(Move.mechan.movenavadP2(self, ["-","*","-","-","%","-"]),["-","*","-","-","%","-"])  
+        self.assertEqual(Move.mechan.movenavadP2(self, ["-","*","-","-","%","-"]),["-","*","-","-","-","%"])  
         
     def test_doge_do_6(self):
         classTest=P1()
@@ -36,6 +36,7 @@ class olimTest(unittest.TestCase):
         classTest.agility=8
         classTest.intelligence=1
         self.assertEqual(Mechaniks.fight.doge(self,classTest),1) 
+        
                   
 if __name__ == '__main__':
     unittest.main()

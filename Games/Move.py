@@ -53,7 +53,7 @@ class mechan():
             first = "*"
             fo=elements.index(first)
             elements[fo]=second
-            elements[fo]=first
+            elements[fo-1]=first
             print("move nazad")
             return(elements)
         except ArithmeticError:
@@ -75,10 +75,10 @@ class mechan():
         elements1=elements
         try: 
             second = "-"
-            first = "*"
+            first = "%"
             fo=elements.index(first)
-            elements[fo+1]=second
-            elements[fo]=first
+            elements[fo]=second
+            elements[fo+1]=first
             print("move nazad")
             return(elements) 
         except ArithmeticError:
