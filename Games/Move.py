@@ -25,7 +25,6 @@ class mechan():
                 elements=mesl.movevperedP1(elements)
             else:
                 elements=mesl.movenavadP1(elements)   
-        
         else:
             if kuda==0: 
                 elements=mesl.movevperedP2(elements)
