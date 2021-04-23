@@ -15,13 +15,21 @@ class  Player:
         self.dodge=int(self.agility)*2
     
     def inicialization (self):
-        print(" --strength------------- ")
-        self.strength=(input())
-        print(" ----agility----------- ")
-        self.agility=(input())
-        print(" --intelligence------------- ")
-        self.intelligence=(input())
+        kolv=15
+        print(" --strength------------- u vas" ,kolv," ockov")
+        sta=input()
+        kolv=kolv-int(sta)
+        print(" ----agility----------- ",kolv," ockov")
+        agta=input()
+        kolv=kolv-int(agta)
+        print(" --intelligence------------- ",kolv," ockov")
+        itga=input()
+        kolv=kolv-int(itga)
         print(" --------------- ")
+        
+        self.intelligence=(itga)
+        self.agility=(agta)
+        self.strength=(sta)
         self.calculation()
         self.showinf0()
         

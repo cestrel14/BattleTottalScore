@@ -19,7 +19,7 @@ def main():
     figth=fight()
     print ("First player vvedite harakters")
     FP1.inicialization()  
-    print ("First player vvedite harakters")      
+    print (" player vvedite harakters")      
     FP2.inicialization()
     print("fight")
     winner=figth.time(FP1, FP2)
