@@ -53,7 +53,7 @@ class mechan():
             second = "-"
             first = "*"
             fo=elements.index(first)
-            elements[fo+1]=second
+            elements[fo]=second
             elements[fo]=first
             print("move nazad")
             return(elements)
