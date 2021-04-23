@@ -13,6 +13,10 @@ class olimTest(unittest.TestCase):
         self.assertEqual(Move.mechan.proverk(self, ["*", "-","-","-","-","%"], 1), 1)
     def test_Na_rasstoyanie_blizko(self):
         self.assertEqual(Move.mechan.proverk(self, [ "-","-","-","-","*","%"], 1), 0) 
+    def test_Na_rasstoyanie_MAGA(self):
+        self.assertEqual(Move.mechan.proverk(self, [ "-","-","-","*","-","%"], 0), 0)    
+    def test_Na_rasstoyanie_MAGA_daleko(self):
+        self.assertEqual(Move.mechan.proverk(self, [ "-","-","*","-","-","%"], 0), 1)        
          
     def test_step_vpered_P1(self):
         self.assertEqual(Move.mechan.movevperedP1(self, ["*","-","-","-","-","%"]),["-","*","-","-","-","%"])   
